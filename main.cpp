@@ -35,7 +35,4 @@ int main(int argc, char *argv[])
     return a.exec();
 }
 
-// initial test is way too slow: 2.20 for a range of 80 - 8888 on local host.  python did the same range in 1.08.
-// changing the waitforconnected to 2ms gave mea  result of 24s to run 80-8888! way faster.
-// Even faster, lowering to a 1ms wait time, got me the same accuracy, at 11s.
-// Fastest I could get python to run was 1m 09s.
+// User definatble wait time(ms) was added.
